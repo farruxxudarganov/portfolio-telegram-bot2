@@ -27,7 +27,7 @@ def aboutme_handler(message):
 
 @bot.message_handler(func=lambda m: m.text == "Loyihalarim")
 def projects_handler(message):
-    text = "Bu qism tez orada qo'shiladi."
+    text = "Bu qism tez orada qo'shiladi"
     
     bot.send_message(message.chat.id, text)
 	
