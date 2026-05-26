@@ -15,7 +15,7 @@ def send_welcome(message):
     btn1 = types.KeyboardButton("Men haqimda")
     btn2 = types.KeyboardButton("Loyihalarim")
     keyboard.add(btn1, btn2)
-    text = "Assalom alaykum, men Farrux Xudarganov. \nBu mening portfolio  botim. \nQuyidagi bo'limlardan birini tanlang."
+    text = "Assalom alaykum, men Farrux Xudarganov. \nBu mening portfolio botim. \nQuyidagi bo'limlardan birini tanlang."
 
     bot.send_message(message.chat.id, text, reply_markup=keyboard)
 
