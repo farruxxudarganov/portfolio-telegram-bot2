@@ -21,7 +21,7 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda m: m.text == "Men haqimda")
 def aboutme_handler(message):
-    text = "Men Farrux frontend engineermen. React.js & Next.js specialistman"
+    text = "Bu qism tez orada qo'shiladi"
     
     bot.send_message(message.chat.id, text)
 
