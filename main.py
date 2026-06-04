@@ -30,9 +30,16 @@ def aboutme_handler(message):
 
 @bot.message_handler(func=lambda m: m.text == "Loyihalarim")
 def projects_handler(message):
-    text = "Bu qism tez orada qo'shiladi"
+    text = """## Loyihalarim
+
+* **Streamline Landing Sahifasi**
+  * **Veb-sayt:** [Streamline Landing Page](https://streamline-xi.vercel.app/)
+
+* **Matnni Lotindan Kirillga yoki Kirilldan Lotinga o'tkazuvchi bot**
+  * **Telegram bot:** [@krilllatin_cnv_bot](https://t.me/@krilllatin_cnv_bot)"""
     
-    bot.send_message(message.chat.id, text)
+    
+    bot.send_message(message.chat.id, text, parse_mode="Markdown")
 
 @bot.message_handler(func=lambda m: m.text == "Kontakt")
 def contact_handler(message):
